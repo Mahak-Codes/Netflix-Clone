@@ -78,8 +78,8 @@ body {
 }
 .hero_card{
     position: absolute;
-    top:28%;
-    left:19%;
+    top:29%;
+    left:27%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -89,8 +89,7 @@ body {
     font-weight: 700;
     font-size:2rem;
 }
-.subtitle,
-hero_desc{
+.subtitle{
     font-weight: 400;
     font-size:1.3rem;
 }
@@ -118,4 +117,196 @@ hero_desc{
     padding:0.25rem 0.5rem;
     height:60px;
     width:170px;
+}
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20; 
+}
+
+.card_title{
+    font-weight: 700;
+    font-size:2rem;
+    padding:8px;
+}
+.card_subtitle{
+    padding:8px;
+    font-weight: 380;
+    font-size:1.3rem;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    border-top:8px rgb(69,69,69) ;
+    padding: 50px;
+}
+.card_desc-1{
+
+    padding-left: 80px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.video1{
+    position: relative;
+    width:150%;
+    height:54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.tv1{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 70%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.card_desc-2{
+    padding: 10vw;
+}
+.card_desc-3{
+
+    padding-left:80px ;
+    padding-right: 20px;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.video2{
+    position: relative;
+    top: -47px;
+    left: 95px;
+    width:65%;
+    height: 78%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: -1;
+}
+.tv2{
+    width: 110%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+} 
+
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+.femail{
+    align-items: center;
+    width: 60vw; 
+    margin: auto;
+    padding-bottom: 30px; 
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
