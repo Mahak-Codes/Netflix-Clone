@@ -1,6 +1,5 @@
 # Netflix Clone Project
 
-``
 This project is a simple Netflix clone created using HTML and CSS. It aims to replicate the layout and design of the Netflix homepage.
 
 ---
